@@ -6,12 +6,12 @@ func main() {
 	var name string
 	var age int
 
-	fmt.Print("Podak imie: ")
+	fmt.Print("Name: ")
 	fmt.Scan(&name)
 
-	fmt.Print("Podaj wiek: ")
+	fmt.Print("Age: ")
 	fmt.Scan(&age)
 
 	rok_ur := 2025 - age
-	fmt.Printf("%s twój rok urodzenia to: %d", name, rok_ur)
+	fmt.Printf("%s your year of birth is: %d", name, rok_ur)
 }

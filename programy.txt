@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 	var age int = 18
-	var name string = "jajko"
-	var wzrostm float64 = 1.85 
+	var name string = "egg"
+	var heightm float64 = 1.85 
 
 	height := 150
 
