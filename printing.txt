@@ -1,0 +1,7 @@
+%s – string
+
+%d – int
+
+%f – float
+
+%t – bool

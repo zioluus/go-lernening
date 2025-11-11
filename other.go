@@ -3,15 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	var name string
-	var age int
+	for i := 1; i < 50; i++ {
+		if i%2 == 0 {
+			fmt.Printf("num: %d is even", i)
+		} else {
+			fmt.Printf("num: %d isn`t even", i)
+		}
 
-	fmt.Print("Name: ")
-	fmt.Scan(&name)
-
-	fmt.Print("Age: ")
-	fmt.Scan(&age)
-
-	year := 2025 - age
-	fmt.Printf("%s your year of birth is: %d", name, year-1)
+	}
 }
