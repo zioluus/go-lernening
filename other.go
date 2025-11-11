@@ -12,6 +12,6 @@ func main() {
 	fmt.Print("Age: ")
 	fmt.Scan(&age)
 
-	rok_ur := 2025 - age
-	fmt.Printf("%s your year of birth is: %d", name, rok_ur)
+	year := 2025 - age
+	fmt.Printf("%s your year of birth is: %d", name, year)
 }
