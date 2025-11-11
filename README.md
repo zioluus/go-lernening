@@ -1,1 +1,1 @@
-I`m just learning don`t mind me
+I amm just learning do not mind me
