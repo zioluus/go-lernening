@@ -1,14 +1,44 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"unicode"
+)
 
 func main() {
-	for i := 1; i < 50; i++ {
-		if i%2 == 0 {
-			fmt.Printf("num: %d is even", i)
-		} else {
-			fmt.Printf("num: %d isn`t even", i)
-		}
+	var password string
+	fmt.Print("Enter password: ")
+	fmt.Scan(&password)
 
+	var hasUpper, hasLower, hasDigit, hasSpecial bool
+
+	for _, ch := range password {
+		switch {
+		case unicode.IsUpper(ch):
+			hasUpper = true
+		case unicode.IsLower(ch):
+			hasLower = true
+		case unicode.IsDigit(ch):
+			hasDigit = true
+		default:
+			hasSpecial = true
+		}
 	}
+	score := 0
+	if len(password) >= 8 {
+		score++
+	}
+	if hasUpper {
+		score++
+	}
+	if hasLower {
+		score++
+	}
+	if hasDigit {
+		score++
+	}
+	if hasSpecial {
+		score++
+	}
+	fmt.Printf("Password lvl: %d/5", score)
 }

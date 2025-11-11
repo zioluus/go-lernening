@@ -14,3 +14,13 @@ func main() {
 	isAdult := age >= 18
 	fmt.Print("Is adult: ", isAdult)
 }
+###########################################
+for i := 1; i < 50; i++ {
+		if i%2 == 0 {
+			fmt.Printf("num: %d is even", i)
+		} else {
+			fmt.Printf("num: %d isn`t even", i)
+		}
+
+	}
+###########################################
